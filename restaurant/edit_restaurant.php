@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                          email = '$email',
                          status = '$status',
                          description = '$description',
-                         password = '$hashed_password'";
+                         password = "YOUR_OWN_API_KEY"";
     } else {
         $update_query = "UPDATE Restaurants SET 
                          restaurant_name = '$restaurant_name', 

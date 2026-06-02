@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['edit_id'])) {
     // If password is provided, hash it and include in the update
     if (!empty($password)) {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-        $update_query .= ", password = '$hashed_password'";
+        $update_query .= ", password = "YOUR_OWN_API_KEY"";
     }
 
     // Handle logo image upload if a new file is provided
